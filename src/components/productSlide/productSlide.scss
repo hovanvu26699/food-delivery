@@ -1,0 +1,65 @@
+.product-list {
+  margin: 50px 50px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
+      padding-right: 20px;
+    }
+    h5 {
+      transform: scale(1);
+      transition: all ease 0.5s;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+    font-size: 25px;
+    line-height: 1;
+    opacity: 0.75;
+  }
+
+  .slick-prev:before {
+    margin-right: 10px;
+    position: absolute;
+    left: -10px;
+  }
+
+  .slide {
+    .product {
+      position: relative;
+      transition: width 2s;
+      &:hover .btnAdd {
+        width: 150px;
+      }
+      .btnAdd {
+        transition: width 1s;
+        padding: 4px;
+        font-size: 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        background: #0aad0a;
+        color: white;
+        border: none;
+        width: 78px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 1px;
+        svg {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}

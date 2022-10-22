@@ -1,0 +1,33 @@
+.prodcut {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+  .product-card {
+    margin: 0 10px;
+    padding: 10px;
+    .box-img {
+      text-decoration: none;
+      img {
+        width: 200px;
+        height: 190px;
+        object-fit: contain;
+        margin: auto;
+        padding: 5px 0;
+      }
+      .product-price {
+        h2 {
+          padding: 7px 0;
+        }
+      }
+      .product-name {
+        font-size: 17px;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

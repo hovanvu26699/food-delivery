@@ -1,0 +1,24 @@
+.navbar {
+  background-color: rgba(231, 231, 231, 0.537);
+  border: 1px solid rgba(236, 236, 236, 0.612);
+  border-width: 1px 0;
+  padding: 20px 10px;
+
+  a.active {
+    color: red;
+    border: none;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 18px;
+    color: rgba(40, 40, 40, 0.599);
+    font-weight: 400;
+    &:hover {
+      color: red;
+      font-weight: 500;
+    }
+  }
+}

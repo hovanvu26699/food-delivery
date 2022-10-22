@@ -1,0 +1,66 @@
+.home_container {
+  width: 100%;
+  margin: auto;
+  .food {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.237);
+    .type-food {
+      padding: 50px 0;
+      width: 80%;
+      margin: auto;
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        span {
+          display: block;
+          font-size: 17px;
+          color: #ff1100;
+
+          &:hover {
+            cursor: pointer;
+            color: #eb1000;
+            font-weight: 500;
+          }
+        }
+      }
+      .list-typefood {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          li {
+            text-align: center;
+            img {
+              height: 120px;
+              width: 120px;
+              object-fit: cover;
+              border-radius: 50%;
+              transform: rotate(0deg);
+              transition: all ease 0.3s;
+              &:hover {
+                cursor: pointer;
+                transform: rotate(10deg);
+              }
+            }
+            span {
+              display: block;
+              margin-top: 7px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ordered {
+    padding: 50px 0;
+    width: 50%;
+    margin: auto;
+  }
+
+  .slideFood {
+    width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+.product-container {
+  .product-describe {
+    padding: 30px 350px;
+    display: flex;
+
+    .box-img {
+      img {
+        width: 250px;
+        margin-right: 20px;
+      }
+    }
+    .product-detail {
+      padding: 20px;
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .rate {
+        display: flex;
+        align-items: center;
+
+        h2 {
+          font-size: 27px;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 18px;
+          color: rgb(93, 93, 93);
+          font-weight: 300;
+          padding-left: 10px;
+        }
+        .count {
+          display: block;
+          font-size: 15px;
+          margin-left: 10px;
+          border-radius: 5px;
+          background-color: #ffb917;
+          padding: 0 4px;
+          padding-top: 2px;
+          color: white;
+
+          svg {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-order {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+.menu-container {
+  .menu-item {
+    display: flex;
+    // align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding: 15px 0;
+    .item-img {
+      padding: 0 20px;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        object-fit: contain;
+      }
+    }
+    .item-title {
+      h3 {
+        font-size: 18px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .item-price {
+      h3 {
+        font-size: 20px;
+        color: rgb(20, 171, 0);
+      }
+    }
+    .btnOrder {
+      button {
+        border: none;
+        background-color: white;
+        transform: scale(1);
+        transition: all ease 0.2s;
+        &:hover {
+          transform: scale(1.2);
+        }
+        svg {
+          font-size: 35px;
+          color: red;
+        }
+      }
+    }
+  }
+}
