@@ -9,6 +9,7 @@
     padding: 10px;
     .box-img {
       text-decoration: none;
+      text-align: center;
       img {
         width: 200px;
         height: 190px;
@@ -19,11 +20,12 @@
       .product-price {
         h2 {
           padding: 7px 0;
+          text-align: left;
         }
       }
       .product-name {
         font-size: 17px;
-        width: 200px;
+        text-align: left;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

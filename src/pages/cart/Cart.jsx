@@ -36,6 +36,11 @@ const Cart = () => {
                                 <div className="item-price">
                                     <span>${item.price}</span>
                                 </div>
+                                <div className="change-count">
+                                    <div><span>-</span></div>
+                                    <div><span>1</span></div>
+                                    <div><span>+</span></div>
+                                </div>
                                 <DeleteIcon />
 
                             </div>

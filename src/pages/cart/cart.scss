@@ -6,19 +6,18 @@
     margin-bottom: 10px;
   }
   .order-list {
-    width: 80%;
+    width: 900px;
     margin: auto;
     .order-item {
-      // display: flex;
-      // align-items: center;
-      // justify-content: space-between;
-
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      justify-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // display: grid;
+      // grid-template-columns: repeat(5, 1fr);
+      // justify-items: center;
 
       border: 1px solid rgb(199, 199, 199);
-      padding: 15px 0;
+      padding: 15px 20px;
       .count {
         span {
           font-size: 18px;
@@ -37,6 +36,30 @@
         span {
           font-size: 18px;
           padding: 0 10px;
+        }
+      }
+
+      .change-count {
+        font-size: 20px;
+        display: flex;
+        div {
+          border: 1px solid black;
+          padding: 0px 15px;
+        }
+        div:nth-child(2) {
+          border-left: none;
+          border-right: none;
+        }
+        div:nth-child(odd) {
+          &:hover span {
+            transform: scale(1.4);
+            cursor: pointer;
+          }
+          span {
+            display: block;
+            transform: scale(1);
+            transition: all ease 0.2s;
+          }
         }
       }
       svg {

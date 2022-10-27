@@ -1,0 +1,36 @@
+.list-product {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+
+  .a-product {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 7px;
+
+    position: relative;
+    transition: width 2s;
+    &:hover .btn-Add {
+      width: 150px;
+    }
+    .btn-Add {
+      transition: width 1s;
+      padding: 4px;
+      font-size: 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      background: #0aad0a;
+      color: white;
+      border: none;
+      width: 78px;
+      white-space: nowrap;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 1px;
+      svg {
+        font-size: 27px;
+      }
+    }
+  }
+}
